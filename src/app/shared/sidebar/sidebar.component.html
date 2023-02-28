@@ -1,0 +1,9 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+  <div class="sticky">
+    <h3 class="text-light">Gifs-App</h3>
+    <hr class="text-light">
+    <div *ngFor="let item of itemHistorial" class="list-group list-reset mb-1" (click)="buscar(item)">
+      <a href="#" class="list-group-item list-group-item-action">{{item | titlecase}}</a>
+    </div>
+  </div>
+</div>
